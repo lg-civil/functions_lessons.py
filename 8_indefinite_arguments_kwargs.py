@@ -22,7 +22,12 @@ print(number_attributes(height = 178, weight = 230, age = 15, eye_color = 'blue'
 
 
 
-
+def list_attributes(**kwargs):
+    attributes_list = []
+    for key, value in kwargs.items():
+        attributes_list.append(value)
+    return attributes_list
+print(list_attributes(height = 178, weight = 230, age = 15, eye_color = 'blue'))
 
 
 
