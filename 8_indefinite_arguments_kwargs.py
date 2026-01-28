@@ -4,6 +4,13 @@
 
 
 
+def number_attributes(**kwargs):
+    sum = 0
+    for num in kwargs:
+        sum += 1
+    return sum 
+print(number_attributes(height = 178, weight = 230, age = 15, eye_color = 'blue'))
+    
 
 
 
